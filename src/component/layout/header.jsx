@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 
 
 const phoneNumber = "+800-123-4567 6587";
-const address = "Beverley, New York 224 USA";
+const address = "Beverle, New York 224 USA";
 
 
 let socialList = [
