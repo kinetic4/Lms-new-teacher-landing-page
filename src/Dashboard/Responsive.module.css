@@ -1,0 +1,26 @@
+.cardContainer {
+  border-radius: 20px !important;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .cardContainer {
+    margin-top: 0rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cardContainer {
+    margin-top: -25rem;
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cardContainer {
+    margin-top: -40rem;
+    width: 71rem;
+    margin-left: -7rem;
+  }
+}

@@ -1,0 +1,19 @@
+.bg-custom-color {
+    background: rgb(203 235 220);
+    opacity: 1;
+}
+
+.bg-custom-color-2 {
+    background: rgb(188 202 222);
+    opacity: 1;
+}
+
+.bg-custom-color-3 {
+    background: rgb(237 215 206 / 47%);
+    opacity: 1;
+}
+
+.bg-custom-color-4 {
+    background: rgb(240 181 187);
+    opacity: 1;
+}
