@@ -28,7 +28,7 @@ const BecomeInstructorPage = () => {
 
   return (
     <Row>
-      <Col md={8} style={{ width: '70rem' }}>
+      <Col md={8} style={{ width: '83rem' }}>
         <h3 className="mb-5">Become Instructor</h3>
 
         <Form>
@@ -44,37 +44,36 @@ const BecomeInstructorPage = () => {
             <Form.Label className="d-flex">New Password</Form.Label>
             <Form.Control type="password" placeholder="New Password" style={formStyle} />
           </Form.Group>
-          <Form.Group controlId="formConfirmPassword" className="mb-4">
+          <Form.Group controlId="formConfirmPassword" className="mb-3">
             <Form.Label className="d-flex">Confirm Password</Form.Label>
             <Form.Control type="password" placeholder="Confirm Password" style={formStyle} />
           </Form.Group>
-          <Form.Group controlId="formPhone" className="mb-4">
-            <Form.Label className="d-flex">Phone</Form.Label>
-            <Form.Control type="text" placeholder="Phone No" style={formStyle} />
-          </Form.Group>
-          <Form.Group controlId="formPhone" className="mb-4">
+         
+          <Form.Group controlId="formPhone" className="mb-3">
             <Form.Label className="d-flex">Phone</Form.Label>
             <Form.Control type="text" placeholder="Phone No" style={formStyle} />
           </Form.Group>
 
-          <Form.Label className="d-flex">Select</Form.Label>
-          <InputGroup className="mb-3"                  >
-<Form.Control aria-label="Text input with dropdown button" style={{    boxShadow: '0 13px 14px 0 rgba(129,104,145,.05)', backgroundColor: 'transparent',  border: '2px solid #e6e3f1', }} />
+          <Form.Label className="d-flex">Vaccancy</Form.Label>
+          <InputGroup className="mb-3">
+            <Form.Control aria-label="Text input with dropdown button" placeholder='Select' style={{ boxShadow: '0 13px 14px 0 rgba(129,104,145,.05)', backgroundColor: 'transparent', border: '2px solid #e6e3f1', }} />
 
-<DropdownButton
-  variant="outline-secondary"
-  title="Dropdown"
-  id="input-group-dropdown-2"
-  align="end"
->
-  <Dropdown.Item href="#">Action</Dropdown.Item>
-  <Dropdown.Item href="#">Another action</Dropdown.Item>
-  <Dropdown.Item href="#">Something else here</Dropdown.Item>
-  <Dropdown.Divider />
-  <Dropdown.Item href="#">Separated link</Dropdown.Item>
-</DropdownButton>
-</InputGroup>
-        
+            <DropdownButton
+
+              variant="outline-secondary"
+              title="Dropdown"
+              id="input-group-dropdown-2"
+              align="end"
+
+            >
+              <Dropdown.Item href="#">Action</Dropdown.Item>
+              <Dropdown.Item href="#">Another action</Dropdown.Item>
+              <Dropdown.Item href="#">Something else here</Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item href="#">Separated link</Dropdown.Item>
+            </DropdownButton>
+          </InputGroup>
+
           <Button variant="primary" type="submit" className="mt-2">
             Save
           </Button>

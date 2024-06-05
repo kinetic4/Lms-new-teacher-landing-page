@@ -4,6 +4,7 @@ import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
 import BootcampPage from './BootcampPage';
+import DashboardPage from './DashboardPage';
 
 const DashboardLayout = () => {
     const heading = {
@@ -18,17 +19,17 @@ const DashboardLayout = () => {
       }
   return (
     <Fragment>
-    <PageHeader title={'Welcome Rakesh M'} curPage={'Bootcamp'} />
+    <PageHeader title={'Welcome Rakesh M'} curPage={'Dashboard'} />
     <Sidebar />
     <Container className="my-4">
       <Row className="justify-content-center">
         <Col xs={12} lg={8} xl={6} className="p-3">
-          <Card className={`text-center shadow-lg ${styles.cardContainer}`}>
+          {/* <Card className={`text-center shadow-lg ${styles.cardContainer}`}> */}
             <Card.Body className="d-flex justify-content-center align-items-flex-start" style={{ minHeight: '19rem' }}>
-              <h5 style={heading}>Dashboard</h5>
-              
+              {/* <h5 style={heading}>Dashboard</h5> */}
+              <DashboardPage />
             </Card.Body>
-          </Card>
+          {/* </Card> */}
         </Col>
       </Row>
     </Container>
