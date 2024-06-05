@@ -20,15 +20,15 @@ const DashboardPage = () => {
 
 
   const orders = [
-    { id: '#5478', courseName: 'App Development', date: 'January 27, 2022', price: '$100.99', status: 'Success' },
-    { id: '#4585', courseName: 'Graphic', date: 'May 27, 2022', price: '$200.99', status: 'Processing' },
-    { id: '#9656', courseName: 'Graphic', date: 'March 27, 2022', price: '$200.99', status: 'On Hold' },
-    { id: '#2045', courseName: 'Application', date: 'March 27, 2022', price: '$200.99', status: 'Canceled' },
-    { id: '#5478', courseName: 'App Development', date: 'January 27, 2022', price: '$100.99', status: 'Success' },
-    { id: '#4585', courseName: 'Graphic', date: 'May 27, 2022', price: '$200.99', status: 'Processing' },
-    { id: '#9656', courseName: 'Graphic', date: 'March 27, 2022', price: '$200.99', status: 'On Hold' },
-    { id: '#2045', courseName: 'Application', date: 'March 27, 2022', price: '$200.99', status: 'Canceled' },
-    { id: '#5478', courseName: 'App Development', date: 'January 27, 2022', price: '$100.99', status: 'Success' },
+    {  courseName: 'App Development', enrolled: '50', price: '$100.99', status: 'Success' },
+    {  courseName: 'Graphic', enrolled: '40', price: '$200.99', status: 'Processing' },
+    {  courseName: 'Graphic', enrolled: '30', price: '$200.99', status: 'On Hold' },
+    {  courseName: 'Application', enrolled: '40', price: '$200.99', status: 'Canceled' },
+    {  courseName: 'App Development', enrolled: '60', price: '$100.99', status: 'Success' },
+    {  courseName: 'Graphic', enrolled: '30', price: '$200.99', status: 'Processing' },
+    {  courseName: 'Graphic', enrolled: '40', price: '$200.99', status: 'On Hold' },
+    {  courseName: 'Application', enrolled: '20', price: '$200.99', status: 'Canceled' },
+    {  courseName: 'App Development', enrolled: '10', price: '$100.99', status: 'Success' },
   ];
 
   const badge1 = {
@@ -147,22 +147,22 @@ const heading = {
       <Card className={`text-center shadow-lg ${styles.tableCardContainer}`}>
     <h5 style={heading}>My Course</h5>
     <div className="table-responsive" style={{margin: '2rem'}}>
-        <Table striped bordered hover style={{ marginTop: '90px' }}>
+        <Table striped  hover style={{ marginTop: '50px', }}>
             <thead style={{ background: 'none' }}>
                 <tr style={{ background: '#c1dfdf52' }}>
-                    <th>Order Id</th>
-                    <th>Course Name</th>
-                    <th>Date</th>
-                    <th>Price</th>
-                    <th>Status</th>
+                    
+                    <th style={{background: '#2f57ef21'}}>Course Name</th>
+                    <th style={{background: '#2f57ef21'}}>Enrolled</th>
+                    <th style={{background: '#2f57ef21'}}>Price</th>
+                    <th style={{background: '#2f57ef21'}}>Status</th>
                 </tr>
             </thead>
             <tbody style={{ borderTop: 'none' }}>
                 {orders.map((order) => (
                     <tr key={order.id}>
-                        <td style={{ color: 'gray' }}>{order.id}</td>
+                       
                         <td style={{ color: 'gray' }}>{order.courseName}</td>
-                        <td style={{ color: 'gray' }}>{order.date}</td>
+                        <td style={{ color: 'gray' }}>{order.enrolled}</td>
                         <td style={{ color: 'gray' }}>{order.price}</td>
                         <td style={{ color: 'gray' }}>{getStatusBadge(order.status)}</td>
                     </tr>

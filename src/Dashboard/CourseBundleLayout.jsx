@@ -3,7 +3,6 @@ import Sidebar from '../component/layout/sidebar'
 import PageHeader from "../component/layout/pageheader";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
-import WishlistCourseList from './WishlistCourseList';
 import CourseBundlePage1 from './CourseBundlePage1';
 import CourseBundlePage2 from './CourseBundlePage2';
 import CourseBundlePage3 from './CourseBundlePage3'

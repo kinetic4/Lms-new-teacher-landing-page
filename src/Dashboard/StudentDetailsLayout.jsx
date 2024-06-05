@@ -3,9 +3,9 @@ import PageHeader from '../component/layout/pageheader'
 import Sidebar from '../component/layout/sidebar';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
-import PurchaseHistoryPage from './PurchaseHistoryPage';
+import StudentDetailPage from './StudentDetailPage';
 
-const PurchaseHistory = () => {
+const StudentDetail = () => {
 
   const heading = {
     display: 'flex',
@@ -20,15 +20,15 @@ const PurchaseHistory = () => {
 
     return (
         <Fragment>
-            <PageHeader title={'Welcome Rakesh M'} curPage={'Purchase History'} />
+            <PageHeader title={'Welcome Rakesh M'} curPage={'Student Details'} />
             <Sidebar />
             <Container className="my-4">
         <Row className="justify-content-center">
           <Col xs={12} lg={8} xl={6} className="p-3">
             <Card className={`text-center shadow-lg ${styles.cardContainer}`}>
               <Card.Body className="d-flex justify-content-center align-items-flex-start" style={{ minHeight: '19rem' }}>
-                <h5 style={heading}>Purchase History</h5>
-                <PurchaseHistoryPage />
+                <h5 style={heading}>Student Details</h5>
+                <StudentDetailPage />
               </Card.Body>
             </Card>
           </Col>
@@ -38,4 +38,4 @@ const PurchaseHistory = () => {
     )
 }
 
-export default PurchaseHistory
+export default StudentDetail

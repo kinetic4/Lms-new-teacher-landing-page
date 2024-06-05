@@ -34,8 +34,8 @@ import TeamPage from "./page/team";
 import TeamSingle from "./page/team-single";
 import BecomeInstructor from "./Dashboard/BecomeInstructorLayout";
 import MyEbook from "./Dashboard/MyEbookLayout";
-import Wishlist from "./Dashboard/WishlistLayout";
-import PurchaseHistory from "./Dashboard/PurchaseHistoryLayout";
+import AssignedStudent from "./Dashboard/AssignedStudentLayout";
+import StudentDetail from "./Dashboard/StudentDetailsLayout";
 import BookedTution from "./Dashboard/BookedTution";
 import Bootcamp from "./Dashboard/BootcampLayout";
 import MyCertificate from "./Dashboard/MyCertificateLayout";
@@ -80,8 +80,8 @@ function App() {
 				<Route path="*" element={<ErrorPage />} />
 				<Route path='/BecomeInstructor' element={<BecomeInstructor />} />
 				<Route path='/myEbook' element={<MyEbook />} />
-				<Route path= '/wishlist' element={<Wishlist />} />
-				<Route path="/purchase-history" element={<PurchaseHistory/>} />
+				<Route path= '/Assigned-student' element={<AssignedStudent/>} />
+				<Route path="/Student-details" element={<StudentDetail/>} />
 				<Route path="/booked-tution" element={<BookedTution />} />
 				<Route path="/bootcamp" element={<Bootcamp />} />
 				<Route path="/my-certificate" element={<MyCertificate />} />
