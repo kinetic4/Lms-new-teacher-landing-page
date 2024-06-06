@@ -36,7 +36,7 @@ import BecomeInstructor from "./Dashboard/BecomeInstructorLayout";
 import MyEbook from "./Dashboard/MyEbookLayout";
 import AssignedStudent from "./Dashboard/AssignedStudentLayout";
 import StudentDetail from "./Dashboard/StudentDetailsLayout";
-import BookedTution from "./Dashboard/BookedTution";
+import SheduledClasses from "./Dashboard/SheduledClassesLayout";
 import Bootcamp from "./Dashboard/BootcampLayout";
 import MyCertificate from "./Dashboard/MyCertificateLayout";
 import Profile from "./Dashboard/ProfileLayout";
@@ -82,7 +82,7 @@ function App() {
 				<Route path='/myEbook' element={<MyEbook />} />
 				<Route path= '/Assigned-student' element={<AssignedStudent/>} />
 				<Route path="/Student-details" element={<StudentDetail/>} />
-				<Route path="/booked-tution" element={<BookedTution />} />
+				<Route path="/Sheduled-classes" element={<SheduledClasses />} />
 				<Route path="/bootcamp" element={<Bootcamp />} />
 				<Route path="/my-certificate" element={<MyCertificate />} />
 				<Route path="/profile" element={<Profile />} />

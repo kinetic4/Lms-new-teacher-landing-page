@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward, faBook, faDollar, faGift, faTv, faUsers } from '@fortawesome/free-solid-svg-icons';
 import './DashboardHover.css'; 
 import styles from './Responsive.module.css'
+import './BadgeStyle.css'
 import { icon } from '@fortawesome/fontawesome-svg-core';
 
 const DashboardPage = () => {
@@ -80,6 +81,18 @@ const badge4 = {
 }
 
 
+const heading = {
+  display: 'flex',
+  height: 'auto',
+  margin: '16px 0 0 20px',
+  width: 'auto',
+  fontFamily: 'cursive',
+  position: 'absolute',
+  left: '20px',
+  right: '0',
+}
+
+
 const getStatusBadge = (status) => {
   switch (status) {
     case 'Success':
@@ -94,18 +107,6 @@ const getStatusBadge = (status) => {
       return null;
   }
 };
-
-const heading = {
-  display: 'flex',
-  height: 'auto',
-  margin: '16px 0 0 20px',
-  width: 'auto',
-  fontFamily: 'cursive',
-  position: 'absolute',
-  left: '20px',
-  right: '0',
-}
-
 
   return (
     <Container>
