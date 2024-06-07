@@ -37,7 +37,7 @@ import MyEbook from "./Dashboard/MyEbookLayout";
 import AssignedStudent from "./Dashboard/AssignedStudentLayout";
 import StudentDetail from "./Dashboard/StudentDetailsLayout";
 import SheduledClasses from "./Dashboard/SheduledClassesLayout";
-import Bootcamp from "./Dashboard/BootcampLayout";
+import MyTracker from "./Dashboard/MyTrackerLayout";
 import MyCertificate from "./Dashboard/MyCertificateLayout";
 import Profile from "./Dashboard/ProfileLayout";
 import Account from "./Dashboard/AccountLayout";
@@ -83,7 +83,7 @@ function App() {
 				<Route path= '/Assigned-student' element={<AssignedStudent/>} />
 				<Route path="/Student-details" element={<StudentDetail/>} />
 				<Route path="/Sheduled-classes" element={<SheduledClasses />} />
-				<Route path="/bootcamp" element={<Bootcamp />} />
+				<Route path="/My-tracker" element={<MyTracker />} />
 				<Route path="/my-certificate" element={<MyCertificate />} />
 				<Route path="/profile" element={<Profile />} />
 				<Route path="/account" element= {<Account />} />

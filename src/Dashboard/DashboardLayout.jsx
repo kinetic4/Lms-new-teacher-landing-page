@@ -3,7 +3,7 @@ import PageHeader from '../component/layout/pageheader'
 import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
-import BootcampPage from './BootcampPage';
+
 import DashboardPage from './DashboardPage';
 
 const DashboardLayout = () => {

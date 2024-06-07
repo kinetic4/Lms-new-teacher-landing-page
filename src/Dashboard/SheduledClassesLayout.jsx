@@ -20,7 +20,7 @@ const SheduledClasses = () => {
 
     return (
         <Fragment>
-            <PageHeader title={'Welcome Rakesh M'} curPage={'Sheduled Classes'} />
+            <PageHeader title={'Welcome Rakesh M'} curPage={'Create Class'} />
             <Sidebar />
             <Container className="my-4">
         <Row className="justify-content-center">

@@ -3,9 +3,10 @@ import PageHeader from '../component/layout/pageheader'
 import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
-import BootcampPage from './BootcampPage';
+import MyTrackerPage from './MyTrackerPage';
 
-const Bootcamp = () => {
+
+const MyTracker = () => {
   const heading = {
     display: 'flex',
     height: 'auto',
@@ -18,15 +19,15 @@ const Bootcamp = () => {
   }
   return (
     <Fragment>
-      <PageHeader title={'Welcome Rakesh M'} curPage={'Bootcamp'} />
+      <PageHeader title={'Welcome Rakesh M'} curPage={'My Tracker'} />
       <Sidebar />
       <Container className="my-4">
         <Row className="justify-content-center">
           <Col xs={12} lg={8} xl={6} className="p-3">
             <Card className={`text-center shadow-lg ${styles.cardContainer}`}>
               <Card.Body className="d-flex justify-content-center align-items-flex-start" style={{ minHeight: '19rem' }}>
-                <h5 style={heading}>Bootcamp</h5>
-                <BootcampPage />
+                <h5 style={heading}>My Tracker</h5>
+                <MyTrackerPage />
               </Card.Body>
             </Card>
           </Col>
@@ -36,4 +37,4 @@ const Bootcamp = () => {
   )
 }
 
-export default Bootcamp
+export default MyTracker
