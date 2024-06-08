@@ -7,11 +7,11 @@ const Sidebar = () => {
 
     const sideBarStyle = {
        marginRight: '50px',
-       marginLeft: '50px',
+       marginLeft: '30px',
        marginTop: '50px', 
        marginBottom: '20px',
        borderRadius: '20px',
-       height: '38rem',
+       height: '37.5rem',
        border: '3px solid transparent',
        borderImage: 'radial-gradient(circle at 50% 50%, rgb(79,124,155), #a6c1ee ) 1',
       
