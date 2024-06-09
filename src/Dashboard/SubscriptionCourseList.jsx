@@ -95,11 +95,11 @@ const SubscriptionCourseList = () => {
 
     return (
         <div className="section-wrapper" style={{ marginTop: '46px' }}>
-            <div className="row g-4 justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1" style={{ margin: '3px' }}>
+            <div className="row g-5 justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1" style={{ margin: '3px' }}>
                 {courseList.map((val, i) => (
-                    <div className="col" key={i}>
+                    <div className="col" key={i} style={{maxWidth: '100%', paddingRight: 'calc(var(3rem)* .5)', paddingLeft: 'calc(var(3rem)* .5)'}}>
                         <div className="course-item">
-                            <div className="course-inner" style={{ borderRadius: "13px" }}>
+                            <div className="course-inner" style={{ borderRadius: "13px" , padding: '0px'}}>
                                 {/* <div className="course-thumb">
                                     <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
                                 </div> */}

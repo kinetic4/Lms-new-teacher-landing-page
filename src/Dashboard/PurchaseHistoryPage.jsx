@@ -80,7 +80,8 @@ const PurchaseHistoryPage = () => {
       };
 
   return (
-    <Table  striped border hover style={{marginTop:'90PX'}}>
+   
+    <Table responsive borderless hover style={{marginTop:'70PX', width: '68rem',  }}>
         <thead style={{background: 'none'}} >
             <tr style={{background: '#c1dfdf52', }}>
                 <th>Order Id</th>
@@ -102,6 +103,7 @@ const PurchaseHistoryPage = () => {
             ))}
         </tbody>
     </Table>
+    
   )
 }
 
