@@ -9,7 +9,7 @@ import AccountPage from './AccountPage';
 const AccountLayout = () => {
     return (
         <Fragment>
-            <PageHeader title={'Welcome Rakesh M'} curPage={'Secure'} />
+            <PageHeader title={'Welcome Rakesh M'} curPage={'Security'} />
             <Sidebar />
             <Container className="my-4">
         <Row className="justify-content-center">
