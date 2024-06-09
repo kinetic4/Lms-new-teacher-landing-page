@@ -12,16 +12,17 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .cardContainer {
-    margin-top: -25rem;
+    margin-top: -35rem;
     width: 80%;
+    margin-left: 12rem;
   }
 }
 
 @media (min-width: 992px) {
   .cardContainer {
-    margin-top: -38rem;
-    width: 68rem;
-    margin-left: -6rem;
+    margin-top: -34.5rem;
+    width: 64rem;
+    margin-left: -5rem;
   }
 }
 
@@ -39,16 +40,16 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .becomeCardContainer {
-    margin-top: -25rem;
-    width: 80%;
+    margin-top: 3rem;
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .becomeCardContainer {
     margin-top: 1rem;
-    width: 83rem;
-    margin-left: -20rem;
+    width: 58rem;
+    margin-left: -9.5rem;
   }
 }
 
@@ -66,15 +67,16 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .tableCardContainer {
-    margin-top: -25rem;
+    margin-top: 1em;
     width: 80%;
+    margin-left: 13rem;
   }
 }
 
 @media (min-width: 992px) {
   .tableCardContainer {
     margin-top: 4rem;
-    width: 68rem;
-    margin-left: -6rem;
+    width: 64rem;
+    margin-left: -5rem;
   }
 }

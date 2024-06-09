@@ -148,7 +148,7 @@ const getStatusBadge = (status) => {
       <Card className={`text-center shadow-lg ${styles.tableCardContainer}`}>
     <h5 style={heading}>My Course</h5>
     <div className="table-responsive" style={{margin: '2rem'}}>
-        <Table striped  hover style={{ marginTop: '50px', }}>
+        <Table borderless  hover style={{ marginTop: '50px', }}>
             <thead style={{ background: 'none' }}>
                 <tr style={{ background: '#c1dfdf52' }}>
                     
