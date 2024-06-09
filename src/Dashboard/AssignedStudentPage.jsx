@@ -76,7 +76,7 @@ const badge4 = {
 
   return (
     <div className='table-responsive' style={{width: '68rem'}}>
-       <Table  striped border hover style={{marginTop:'90PX'}}>
+       <Table  borderless  hover style={{marginTop:'90PX', background: 'none'}}>
         <thead style={{background: 'none'}} >
             <tr style={{background: '#c1dfdf52', }}>
                 <th>Order Id</th>

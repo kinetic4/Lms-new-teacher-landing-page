@@ -43,6 +43,7 @@ import Profile from "./Dashboard/ProfileLayout";
 import Account from "./Dashboard/AccountLayout";
 import CourseBundle from "./Dashboard/CourseBundleLayout";
 import DashboardLayout from "./Dashboard/DashboardLayout";
+import Security from './Dashboard/SecurityLayout'
 
 
 function App() {
@@ -89,6 +90,7 @@ function App() {
 				<Route path="/account" element= {<Account />} />
 				<Route path="/course-bundle" element= {<CourseBundle />} />
 				<Route path='/Dashboard' element = {<DashboardLayout />} />
+				<Route path='/Security' element = {<Security />} />
 			</Routes>
 		</BrowserRouter>
 	);
