@@ -69,28 +69,28 @@ const StudentDetailPage = () => {
                                         </Button>
                                     </Col>
                                 </Row>
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item className="d-flex justify-content-between">
+                                <ListGroup variant="flush" >
+                                    <ListGroup.Item className="d-flex justify-content-between" style={{border: 'none'}}>
                                         <span className="text-muted">Email ID</span>
                                         <span>kate@yahoo.com</span>
                                     </ListGroup.Item>
-                                    <ListGroup.Item className="d-flex justify-content-between">
+                                    <ListGroup.Item className="d-flex justify-content-between" style={{border: 'none'}}>
                                         <span className="text-muted">Birthday</span>
                                         <span>01 Feb 1990</span>
                                     </ListGroup.Item>
-                                    <ListGroup.Item className="d-flex justify-content-between">
+                                    <ListGroup.Item className="d-flex justify-content-between" style={{border: 'none'}}>
                                         <span className="text-muted">Phone</span>
                                         <span>+99 8756214524</span>
                                     </ListGroup.Item>
-                                    <ListGroup.Item className="d-flex justify-content-between">
+                                    <ListGroup.Item className="d-flex justify-content-between" style={{border: 'none'}}>
                                         <span className="text-muted">Country</span>
                                         <span>USA</span>
                                     </ListGroup.Item>
-                                    <ListGroup.Item className="d-flex justify-content-between">
+                                    <ListGroup.Item className="d-flex justify-content-between" style={{border: 'none'}}>
                                         <span className="text-muted">State/Region</span>
                                         <span>West Virginia</span>
                                     </ListGroup.Item>
-                                    <ListGroup.Item className="d-flex justify-content-between">
+                                    <ListGroup.Item className="d-flex justify-content-between" style={{border: 'none'}}>
                                         <span className="text-muted">Address</span>
                                         <span>Baker Street, no. 7</span>
                                     </ListGroup.Item>

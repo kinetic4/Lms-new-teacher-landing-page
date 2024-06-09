@@ -5,6 +5,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
 import StudentDetailPage from './StudentDetailPage';
 
+
 const StudentDetail = () => {
 
   const heading = {
@@ -34,6 +35,7 @@ const StudentDetail = () => {
           </Col>
         </Row>
       </Container>
+      
         </Fragment>
     )
 }
