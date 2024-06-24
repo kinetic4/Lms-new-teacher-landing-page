@@ -43,7 +43,8 @@ import Profile from "./Dashboard/ProfileLayout";
 import Account from "./Dashboard/AccountLayout";
 import CourseBundle from "./Dashboard/CourseBundleLayout";
 import DashboardLayout from "./Dashboard/DashboardLayout";
-import Security from './Dashboard/SecurityLayout'
+import FranchiseSubscription from "./page/FranchiseSubscription";
+import MyTrackerViewDeatails from "./Dashboard/MyTracker-ViewDeatails";
 
 
 function App() {
@@ -90,7 +91,8 @@ function App() {
 				<Route path="/account" element= {<Account />} />
 				<Route path="/course-bundle" element= {<CourseBundle />} />
 				<Route path='/Dashboard' element = {<DashboardLayout />} />
-				<Route path='/Security' element = {<Security />} />
+				<Route path= '/BecomeFranchise' element = {<FranchiseSubscription/>} />
+				<Route path= "/ViewDetails" element = {<MyTrackerViewDeatails />} />
 			</Routes>
 		</BrowserRouter>
 	);

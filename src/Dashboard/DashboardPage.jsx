@@ -91,7 +91,11 @@ const DashboardPage = () => {
     height: 'auto',
     margin: '16px 0 0 20px',
     width: 'auto',
-    fontFamily: 'cursive',
+    fontFamily: 'Josefin Sans, sans-serif',
+        fontOpticalSizing: 'auto',
+    fontWeight: '700', // Replace <weight> with the desired font weight value
+    fontStyle: 'normal',
+    color: 'black',
     position: 'absolute',
     left: '20px',
     right: '0',
