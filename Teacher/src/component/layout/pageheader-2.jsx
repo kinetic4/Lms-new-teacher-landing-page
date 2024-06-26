@@ -1,4 +1,5 @@
 
+import Calendar from "../../page/Calender";
 import Rating from "../sidebar/rating";
 
 const title = "Advanced Adobe Photoshop For Everyone";
@@ -28,10 +29,7 @@ const PageHeaderTwo = () => {
             <div className="container">
                 <div className="row justify-content-center justify-content-lg-between align-items-center flex-row-reverse">
                     <div className="col-lg-7 col-12">
-                        <div className="pageheader-thumb">
-                            <img src="assets/images/pageheader/02.jpg" alt="rajibraj91" className="w-100" />
-                            <a href={videoLink} className="video-button popup" target="_blank"><i className="icofont-ui-play"></i></a>
-                        </div>
+                        <Calendar />
                     </div>
                     <div className="col-lg-5 col-12">
                         <div className="pageheader-content">
