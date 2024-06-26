@@ -14,7 +14,12 @@ const AccountPage = () => {
     fontSize: '14px',
     color: '#6b7385',
     marginBottom: '15px',
-    boxShadow: '0 13px 14px 0 rgba(129,104,145,.05)'
+    boxShadow: '0 13px 14px 0 rgba(129,104,145,.05)',
+    fontFamily: 'Josefin Sans, sans-serif',
+    fontOpticalSizing: 'auto',
+    fontWeight: '700', // Replace <weight> with the desired font weight value
+    fontStyle: 'normal',
+    color: 'black'
   }
 
   return (

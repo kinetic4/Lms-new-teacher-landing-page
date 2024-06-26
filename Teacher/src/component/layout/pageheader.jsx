@@ -26,7 +26,7 @@ const PageHeader = ({ title, curPage, img }) => {
                             <h2 style={heading}>{title}</h2>
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb justify-content-center">
-                                    <li className="breadcrumb-item"><Link to="/dashboard" style={{color: 'white'}}>Home</Link></li>
+                                    <li className="breadcrumb-item"><Link to="/" style={{color: 'white'}}>Home</Link></li>
                                     <li className="breadcrumb-item active" aria-current="page" style={{color: 'white'}}>{curPage}</li>
                                 </ol>
                             </nav>

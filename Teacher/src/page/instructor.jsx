@@ -6,7 +6,7 @@ import PageHeader from "../component/layout/pageheader";
 import Achievement from "../component/section/achievement";
 import Student from "../component/section/student";
 
-const subTitle = "Teach on edulon";
+const subTitle = "Get Your Franchise At Star Gleam Education";
 const title = "Discover Your Potential. Make A Global Impact.";
 const btnText = "Browse All Categories";
 
@@ -37,10 +37,9 @@ const InstructorPage = () => {
     return (
         <Fragment>
             <Header />
-            <PageHeader title={'All Best Instructors'} curPage={'instructor'} />
             <div className="category-section padding-tb section-bg style-3">
                 <div className="container">
-                    <div className="section-header text-center">
+                    <div className="section-header text-center" style={{marginTop: '10rem'}}>
                         <span className="subtitle">{subTitle}</span>
                         <h2 className="title">{title}</h2>
                     </div>
