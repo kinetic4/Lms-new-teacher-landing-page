@@ -57,9 +57,6 @@ const ProfilePage = () => {
     <Button variant="primary" type="submit" className="mt-2">
       Save
     </Button>
-    <Button variant='primary' type='submit' className='mt-2'>
-      Upload
-    </Button>
   </Form>
   )
 }

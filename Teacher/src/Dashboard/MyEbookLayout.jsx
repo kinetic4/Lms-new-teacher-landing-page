@@ -15,11 +15,6 @@ const MyEbook = () => {
     position: 'absolute',
     left: '20px',
     right: '0',
-    fontFamily: 'Josefin Sans, sans-serif',
-        fontOpticalSizing: 'auto',
-    fontWeight: '700', // Replace <weight> with the desired font weight value
-    fontStyle: 'normal',
-    color: '#Black'
   }
   return (
     <Fragment>
