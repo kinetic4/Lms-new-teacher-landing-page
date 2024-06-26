@@ -4,6 +4,7 @@ import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
 import SheduledClassesPage from './SheduledClassesPage';
+import Header from '../component/layout/header';
 
 const SheduledClasses = () => {
 
@@ -25,6 +26,7 @@ const SheduledClasses = () => {
 
     return (
         <Fragment>
+          <Header />
             <PageHeader title={'Welcome Rakesh M'} curPage={'Create Class'} />
             <Sidebar />
             <Container className="my-4">

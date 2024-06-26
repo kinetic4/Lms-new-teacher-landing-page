@@ -4,6 +4,7 @@ import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css';
 import MyebooksPage from './MyebooksPage';
+import Header from '../component/layout/header';
 
 const MyEbook = () => {
   const heading = {
@@ -23,6 +24,7 @@ const MyEbook = () => {
   }
   return (
     <Fragment>
+      <Header />  
         <PageHeader title={'Welcome Rakesh M'} curPage={'MyEbook'}/>
         <Sidebar />
         <Container className="my-4">

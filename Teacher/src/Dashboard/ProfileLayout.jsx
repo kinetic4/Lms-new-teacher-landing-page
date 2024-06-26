@@ -4,6 +4,7 @@ import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Form, Button, Card, Image } from 'react-bootstrap';
 import styles from './Responsive.module.css'
 import ProfilePage from './ProfilePage';
+import Header from '../component/layout/header';
 
   const heading = {
     fontFamily: 'Josefin Sans, sans-serif',
@@ -16,6 +17,7 @@ import ProfilePage from './ProfilePage';
 const Profile = () => {
     return (
       <Fragment>
+        <Header />
       <PageHeader title={'Welcome Rakesh M'} curPage={'Profile'} />
       <Sidebar />
       <Container className="my-4">

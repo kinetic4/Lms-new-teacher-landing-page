@@ -85,7 +85,7 @@ const Header = () => {
                                         </ul>
                                     </li>                                    
                                     <li className="menu-item-has-children">
-                                        <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Our Team</a>
+                                        <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">About Us</a>
                                         <ul className="lab-ul dropdown-menu">
                                             <li><NavLink to="/about">About</NavLink></li>
                                            
@@ -93,9 +93,9 @@ const Header = () => {
                                         </ul>
                                     </li>
                                     <li><NavLink to="/contact" style={{ position: 'relative', marginLeft: '-6px' }}>Contact</NavLink></li>
-                                    <li>
-                                        <NavLink to='/subscription' style={{position: 'relative', marginLeft: '-6px'}}>Dashboard</NavLink>
-                                    </li>
+                                    {/* initally this Dashboard li woluld be hidden after loggin in this dashboard should be visible 
+                                <li><NavLink to='subscription' style={{ position: 'relative', marginLeft: '-6px' }}>Dashboard</NavLink></li>
+                               */}
                                 </ul>
                             </div>
 

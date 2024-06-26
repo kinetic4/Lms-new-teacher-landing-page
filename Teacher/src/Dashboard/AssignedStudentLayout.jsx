@@ -5,6 +5,7 @@ import Rating from "../component/sidebar/rating";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css';
 import AssignedStudentPage from './AssignedStudentPage';
+import Header from '../component/layout/header';
 
 
 
@@ -30,6 +31,7 @@ const AssignedStudent = () => {
 
   return (
    <Fragment>
+    <Header />
      <PageHeader title={'Welcome Rakesh M'} curPage={'Assigned Student'} /> 
      <Sidebar />
      <Container className="my-4">
