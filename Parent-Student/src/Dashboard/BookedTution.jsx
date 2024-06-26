@@ -3,6 +3,7 @@ import PageHeader from '../component/layout/pageheader'
 import Sidebar from '../component/layout/sidebar'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css'
+import Header from '../component/layout/header';
 
 const BookedTution = () => {
 
@@ -15,10 +16,16 @@ const BookedTution = () => {
     position: 'absolute',
     left: '20px',
     right: '0',
+    fontFamily: 'Josefin Sans, sans-serif',
+    fontOpticalSizing: 'auto',
+fontWeight: '700', // Replace <weight> with the desired font weight value
+fontStyle: 'normal',
+color: 'black'
   }
 
     return (
         <Fragment>
+          <Header />
             <PageHeader title={'Welcome Rakesh M'} curPage={'Booked Tution'} />
             <Sidebar />
             <Container className="my-4">

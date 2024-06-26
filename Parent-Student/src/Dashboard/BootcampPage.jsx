@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Rating from "../component/sidebar/rating";
+import { Button, Modal, Form } from 'react-bootstrap';
 
+  
 const courseList = [
     {
         imgUrl: 'assets/images/course/01.jpg',
@@ -48,16 +50,52 @@ const courseList = [
 
 ]
 
+
+
 const BootcampPage = () => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        <div className="section-wrapper" style={{ marginTop: '46px' }}>
+        <div className="section-wrapper" style={{ marginTop: '46px' }}> 
+            <Button style={{marginRight: '35rem', marginTop: '-4rem', boxShadow: 'none'}} onClick={handleShow}>Add Child</Button>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Add Child</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                <Form>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Child Name</Form.Label>
+              <Form.Control type="email" placeholder="Child Name" />
+              <Form.Text className="text-muted">
+              </Form.Text>
+              <br/>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Child Code</Form.Label>
+              <Form.Control type="password" placeholder="Automatically generates unique code" />
+            </Form.Group>
+          </Form>
+                </Modal.Body>
+                <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+            </Modal>
             <div className="row g-4 justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1" style={{ margin: '3px' }}>
                 {courseList.map((val, i) => (
                     <div className="col" key={i}>
                         <div className="course-item">
                             <div className="course-inner" style={{ borderRadius: "13px" }}>
                                 <div className="course-thumb">
-                                    <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                                    {/* <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} /> */}
                                 </div>
                                 <div className="course-content">
                                     {/* <div className="course-price">{val.price}</div> */}
