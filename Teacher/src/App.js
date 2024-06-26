@@ -1,5 +1,5 @@
 
-import {BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'swiper/css';
 
 
@@ -79,6 +79,7 @@ function App() {
 				<Route path="*" element={<ErrorPage />} />
 				<Route path='/subscription' element={<Subscription />} />
 				<Route path='/myEbook' element={<MyEbook />} />
+<<<<<<< Updated upstream
 				<Route path= '/wishlist' element={<Wishlist />} />
 				<Route path="/purchase-history" element={<PurchaseHistory/>} />
 				<Route path="/booked-tution" element={<BookedTution />} />
@@ -87,6 +88,19 @@ function App() {
 				<Route path="/profile" element={<Profile />} />
 				<Route path="/account" element= {<Account />} />
 				<Route path="/course-bundle" element= {<CourseBundle />} />
+=======
+				<Route path='/Assigned-student' element={<AssignedStudent />} />
+				<Route path="/Student-details" element={<StudentDetail />} />
+				<Route path="/Sheduled-classes" element={<SheduledClasses />} />
+				<Route path="/My-tracker" element={<MyTracker />} />
+				<Route path="/my-certificate" element={<MyCertificate />} />
+				<Route path="/profile" element={<Profile />} />
+				<Route path="/account" element={<Account />} />
+				<Route path="/course-bundle" element={<CourseBundle />} />
+				<Route path='/Dashboard' element={<DashboardLayout />} />
+				<Route path='/BecomeFranchise' element={<FranchiseSubscription />} />
+				<Route path="/ViewDetails" element={<MyTrackerViewDeatails />} />
+>>>>>>> Stashed changes
 			</Routes>
 		</BrowserRouter>
 	);
