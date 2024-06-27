@@ -1,12 +1,11 @@
-name: CI/CD Pipeline
+name: CI/CD Pipeline for Teacher
 
 on:
   push:
     branches:
       - deployment
-  pull_request:
-    branches:
-      - deployment
+    paths:
+      - 'Teacher/**'
 
 jobs:
   build:
@@ -20,10 +19,13 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --prefix Teacher/
 
     - name: Run tests
-      run: npm test
+      run: npm test --prefix Teacher/
+
+    - name: Build project
+      run: npm run build --prefix Teacher/
 
   deploy:
     needs: build
@@ -42,5 +44,7 @@ jobs:
         script: |
           cd /var/www/stargleam/teacher
           git pull
-          npm install --production
+          npm install --production --prefix Teacher/
+          # Assuming the build directory is within the Teacher directory and needs to be moved to a specific path
+          cp -r Teacher/build/* /var/www/stargleam/teacher/
           pm2 restart all
