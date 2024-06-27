@@ -8,6 +8,7 @@ import WishlistCourseList from './WishlistCourseList';
 import CourseBundlePage1 from './CourseBundlePage1';
 import CourseBundlePage2 from './CourseBundlePage2';
 import CourseBundlePage3 from './CourseBundlePage3'
+import Header from '../component/layout/header';
 
 
 
@@ -22,12 +23,18 @@ const CourseBundle = () => {
         position: 'absolute',
         left: '20px',
         right: '0',
+        fontFamily: 'Josefin Sans, sans-serif',
+        fontOpticalSizing: 'auto',
+    fontWeight: '700', // Replace <weight> with the desired font weight value
+    fontStyle: 'normal',
+    color: 'black'
     }
 
 
     return (
         <Fragment>
-            <PageHeader title={'Welcome Rakesh M'} curPage={'Booked Tution'} />
+            <Header />
+            <PageHeader title={'Welcome Rakesh M'} curPage={'Course Bundle'} />
             <Sidebar />
             <Container className="my-4">
                 <Row className="justify-content-center">
