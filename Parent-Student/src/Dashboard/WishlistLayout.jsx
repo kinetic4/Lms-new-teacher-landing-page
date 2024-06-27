@@ -5,6 +5,7 @@ import Rating from "../component/sidebar/rating";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css';
 import WishlistCourseList from './WishlistCourseList';
+import Header from '../component/layout/header';
 
 
 
@@ -21,10 +22,16 @@ const Wishlist = () => {
     position: 'absolute',
     left: '20px',
     right: '0',
+    fontFamily: 'Josefin Sans, sans-serif',
+    fontOpticalSizing: 'auto',
+fontWeight: '700', // Replace <weight> with the desired font weight value
+fontStyle: 'normal',
+color: 'black'
   }
 
   return (
    <Fragment>
+    <Header />
      <PageHeader title={'Welcome Rakesh M'} curPage={'Wishlist'} /> 
      <Sidebar />
      <Container className="my-4">
