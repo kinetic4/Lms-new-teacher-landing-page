@@ -107,7 +107,7 @@ const Course = () => {
                 <div className="course-item">
                 <div className="course-inner" style={{borderRadius: "13px"}}>
                                         <div className="course-thumb">
-                                            <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
+                                            {/* <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} /> */}
                                         </div>
                                         <div className="course-content">
                                             <div className="course-price">{val.price}</div>

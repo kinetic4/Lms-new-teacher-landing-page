@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
 import 'swiper/css';
 
 
@@ -32,16 +32,19 @@ import ShopDetails from "./page/shop-single";
 import SignupPage from "./page/signup";
 import TeamPage from "./page/team";
 import TeamSingle from "./page/team-single";
-import Subscription from "./Dashboard/SubscriptionLayout";
+import BecomeInstructor from "./Dashboard/BecomeInstructorLayout";
 import MyEbook from "./Dashboard/MyEbookLayout";
-import Wishlist from "./Dashboard/WishlistLayout";
-import PurchaseHistory from "./Dashboard/PurchaseHistoryLayout";
-import BookedTution from "./Dashboard/BookedTution";
-import Bootcamp from "./Dashboard/BootcampLayout";
+import AssignedStudent from "./Dashboard/AssignedStudentLayout";
+import StudentDetail from "./Dashboard/StudentDetailsLayout";
+import SheduledClasses from "./Dashboard/SheduledClassesLayout";
+import MyTracker from "./Dashboard/MyTrackerLayout";
 import MyCertificate from "./Dashboard/MyCertificateLayout";
 import Profile from "./Dashboard/ProfileLayout";
 import Account from "./Dashboard/AccountLayout";
 import CourseBundle from "./Dashboard/CourseBundleLayout";
+import DashboardLayout from "./Dashboard/DashboardLayout";
+import FranchiseSubscription from "./page/FranchiseSubscription";
+import MyTrackerViewDeatails from "./Dashboard/MyTracker-ViewDeatails";
 
 
 function App() {
@@ -77,30 +80,19 @@ function App() {
 				<Route path="signup" element={<SignupPage />} />
 				<Route path="forgetpass" element={<ForgetPass />} />
 				<Route path="*" element={<ErrorPage />} />
-				<Route path='/subscription' element={<Subscription />} />
+				<Route path='/BecomeInstructor' element={<BecomeInstructor />} />
 				<Route path='/myEbook' element={<MyEbook />} />
-<<<<<<< Updated upstream
-				<Route path= '/wishlist' element={<Wishlist />} />
-				<Route path="/purchase-history" element={<PurchaseHistory/>} />
-				<Route path="/booked-tution" element={<BookedTution />} />
-				<Route path="/bootcamp" element={<Bootcamp />} />
-				<Route path="/my-certificate" element={<MyCertificate />} />
-				<Route path="/profile" element={<Profile />} />
-				<Route path="/account" element= {<Account />} />
-				<Route path="/course-bundle" element= {<CourseBundle />} />
-=======
-				<Route path='/Assigned-student' element={<AssignedStudent />} />
-				<Route path="/Student-details" element={<StudentDetail />} />
+				<Route path= '/Assigned-student' element={<AssignedStudent/>} />
+				<Route path="/Student-details" element={<StudentDetail/>} />
 				<Route path="/Sheduled-classes" element={<SheduledClasses />} />
 				<Route path="/My-tracker" element={<MyTracker />} />
 				<Route path="/my-certificate" element={<MyCertificate />} />
 				<Route path="/profile" element={<Profile />} />
-				<Route path="/account" element={<Account />} />
-				<Route path="/course-bundle" element={<CourseBundle />} />
-				<Route path='/Dashboard' element={<DashboardLayout />} />
-				<Route path='/BecomeFranchise' element={<FranchiseSubscription />} />
-				<Route path="/ViewDetails" element={<MyTrackerViewDeatails />} />
->>>>>>> Stashed changes
+				<Route path="/account" element= {<Account />} />
+				<Route path="/course-bundle" element= {<CourseBundle />} />
+				<Route path='/Dashboard' element = {<DashboardLayout />} />
+				<Route path= '/BecomeFranchise' element = {<FranchiseSubscription/>} />
+				<Route path= "/ViewDetails" element = {<MyTrackerViewDeatails />} />
 			</Routes>
 		</BrowserRouter>
 	);

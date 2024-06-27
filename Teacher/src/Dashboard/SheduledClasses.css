@@ -1,0 +1,36 @@
+.calendar-container {
+    margin-top: 20px;
+  }
+  
+  .calendar-header {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-nav-btn {
+    margin-right: 10px;
+  }
+  
+  .calendar-view-btn {
+    margin-left: 10px;
+  }
+  
+  .calendar-add-btn {
+    margin-left: 10px;
+  }
+  
+  .calendar-title {
+    margin: 0;
+  }
+  
+  .calendar-event {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .calendar-event-icon {
+    margin-right: 5px;
+  }

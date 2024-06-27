@@ -5,7 +5,7 @@ import './Font.css'
 
 const PageHeader = ({ title, curPage, img }) => {
     const background = {
-        backgroundImage: `url('./assets/images/banner-background/01.jpg')`,
+        backgroundImage: `url('./assets/images/pageheader/bg/02.jpg')`,
     }
     
     const heading = {
@@ -13,7 +13,7 @@ const PageHeader = ({ title, curPage, img }) => {
         fontOpticalSizing: 'auto',
     fontWeight: '700', // Replace <weight> with the desired font weight value
     fontStyle: 'normal',
-    color: '#E9D182'
+    color: 'black'
     }
    
 
@@ -26,8 +26,8 @@ const PageHeader = ({ title, curPage, img }) => {
                             <h2 style={heading}>{title}</h2>
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb justify-content-center">
-                                    <li className="breadcrumb-item"><Link to="/dashboard" style={{color: 'white'}}>Home</Link></li>
-                                    <li className="breadcrumb-item active" aria-current="page" style={{color: 'white'}}>{curPage}</li>
+                                    <li className="breadcrumb-item"><Link to="/dashboard" style={{color: 'black'}}>Home</Link></li>
+                                    <li className="breadcrumb-item active" aria-current="page" style={{color: 'black'}}>{curPage}</li>
                                 </ol>
                             </nav>
                            

@@ -12,6 +12,7 @@
 /build
 
 # misc
+
 .DS_Store
 .env.local
 .env.development.local
@@ -21,3 +22,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+Parent-Student/build/
+Parent-Student/node_modules/
+Parent-Student/yarn.lock
+Teacher/build/
+Teacher/node_modules/

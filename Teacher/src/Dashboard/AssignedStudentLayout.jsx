@@ -4,13 +4,14 @@ import Sidebar from '../component/layout/sidebar'
 import Rating from "../component/sidebar/rating";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from './Responsive.module.css';
-import WishlistCourseList from './WishlistCourseList';
+import AssignedStudentPage from './AssignedStudentPage';
+import Header from '../component/layout/header';
 
 
 
 
 
-const Wishlist = () => {
+const AssignedStudent = () => {
 
   const heading = {
     display: 'flex',
@@ -21,20 +22,26 @@ const Wishlist = () => {
     position: 'absolute',
     left: '20px',
     right: '0',
+    fontFamily: 'Josefin Sans, sans-serif',
+        fontOpticalSizing: 'auto',
+    fontWeight: '700', // Replace <weight> with the desired font weight value
+    fontStyle: 'normal',
+    color: '#black'
   }
 
   return (
    <Fragment>
-     <PageHeader title={'Welcome Rakesh M'} curPage={'Wishlist'} /> 
+    <Header />
+     <PageHeader title={'Welcome Rakesh M'} curPage={'Assigned Student'} /> 
      <Sidebar />
      <Container className="my-4">
         <Row className="justify-content-center">
           <Col xs={12} lg={8} xl={6} className="p-3">
             <Card className={`text-center shadow-lg ${styles.cardContainer}`}>
               <Card.Body className="d-flex justify-content-center align-items-flex-start" style={{ minHeight: '19rem' }}>
-                <h5 style={heading}>Wishlist</h5>
+                <h5 style={heading}>Assigned Student</h5>
                 <hr />
-                <WishlistCourseList />
+                <AssignedStudentPage />
               </Card.Body>
             </Card>
           </Col>
@@ -44,4 +51,4 @@ const Wishlist = () => {
   )
 }
 
-export default Wishlist
+export default AssignedStudent
