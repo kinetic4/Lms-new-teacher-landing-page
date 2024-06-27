@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for Teacher
+name: CI/CD Pipeline for Multiple Projects
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - deployment
     paths:
       - 'Teacher/**'
+      - 'Parent-Student/**'
 
 jobs:
   build:
@@ -18,14 +19,31 @@ jobs:
       with:
         node-version: '20'
 
-    - name: Install dependencies
+    # Install and test Teacher project
+    - name: Install dependencies for Teacher
+      if: contains(github.event.head_commit.modified, 'Teacher/')
       run: npm install --prefix Teacher/
 
-    - name: Run tests
+    - name: Run tests for Teacher
+      if: contains(github.event.head_commit.modified, 'Teacher/')
       run: npm test --prefix Teacher/
 
-    - name: Build project
+    - name: Build Teacher project
+      if: contains(github.event.head_commit.modified, 'Teacher/')
       run: npm run build --prefix Teacher/
+
+    # Install and test Parent-Student project
+    - name: Install dependencies for Parent-Student
+      if: contains(github.event.head_commit.modified, 'Parent-Student/')
+      run: npm install --prefix Parent-Student/
+
+    - name: Run tests for Parent-Student
+      if: contains(github.event.head_commit.modified, 'Parent-Student/')
+      run: npm test --prefix Parent-Student/
+
+    - name: Build Parent-Student project
+      if: contains(github.event.head_commit.modified, 'Parent-Student/')
+      run: npm run build --prefix Parent-Student/
 
   deploy:
     needs: build
@@ -35,16 +53,32 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Deploy to VPS
+    # Deploy Teacher project
+    - name: Deploy Teacher to VPS
+      if: contains(github.event.head_commit.modified, 'Teacher/')
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        host: 195.35.22.132
+        username: root
+        password: ryiTnZLZGBVY2Fg!@#
         script: |
           cd /var/www/stargleam/teacher
           git pull
           npm install --production --prefix Teacher/
-          # Assuming the build directory is within the Teacher directory and needs to be moved to a specific path
           cp -r Teacher/build/* /var/www/stargleam/teacher/
-          pm2 restart all
+          # pm2 restart all
+
+    # Deploy Parent-Student project
+    - name: Deploy Parent-Student to VPS
+      if: contains(github.event.head_commit.modified, 'Parent-Student/')
+      uses: appleboy/ssh-action@master
+      with:
+        host: 195.35.22.132
+        username: root
+        password: ryiTnZLZGBVY2Fg!@#
+        script: |
+          cd /var/www/stargleam/parent
+          git pull
+          npm install --production --prefix Parent-Student/
+          cp -r Parent-Student/build/* /var/www/stargleam/parent/
+          # pm2 restart all
